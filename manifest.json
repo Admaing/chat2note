@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Gemini AI 笔记生成器",
+  "version": "1.0",
+  "description": "为每个对话tab生成笔记按钮，调用Gemini AI生成Markdown笔记",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 

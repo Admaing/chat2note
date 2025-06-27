@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>AI 笔记插件</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; }
+    label { display: block; margin-bottom: 8px; }
+    input, select { width: 100%; margin-bottom: 12px; }
+    button { padding: 6px 16px; }
+  </style>
+</head>
+<body>
+  <h2>AI 笔记插件设置</h2>
+  <label for="model">选择模型:</label>
+  <select id="model">
+    <option value="deepseek">DeepSeek</option>
+    <option value="chatgpt">ChatGPT</option>
+    <option value="gemini">Gemini</option>
+  </select>
+  <div id="apiKeyInputs">
+    <label for="deepseek_api_key">DeepSeek API Key:</label>
+    <input type="text" id="deepseek_api_key" placeholder="DeepSeek API Key" />
+    <label for="chatgpt_api_key">ChatGPT API Key:</label>
+    <input type="text" id="chatgpt_api_key" placeholder="ChatGPT API Key" />
+    <label for="gemini_api_key">Gemini API Key:</label>
+    <input type="text" id="gemini_api_key" placeholder="Gemini API Key" />
+  </div>
+  <button id="saveBtn">保存</button>
+  <script src="popup.js"></script>
+</body>
+</html> 
